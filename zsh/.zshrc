@@ -4,8 +4,8 @@ if [[ $+commands[batcat] == 1 ]]; then
 fi
 
 if [[ $+commands[exa] == 1 ]]; then
-  alias ls="exa"
-  alias l="exa -lah"
+  alias ls="exa --group-directories-first"
+  alias l="exa -lah --group-directories-first"
 fi
 
 # Options
