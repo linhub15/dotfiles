@@ -1,6 +1,8 @@
 # Aliases
 if [[ $+commands[batcat] == 1 ]]; then
   alias cat="batcat"
+elif [[ $+commands[bat] == 1 ]]; then
+  alias cat="bat"
 fi
 
 if [[ $+commands[exa] == 1 ]]; then
