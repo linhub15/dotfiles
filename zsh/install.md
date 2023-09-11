@@ -1,6 +1,4 @@
-# zsh and ohmyzsh
-
-https://github.com/ohmyzsh/ohmyzsh/wiki
+# zsh
 
 ## Ubuntu
 
@@ -18,3 +16,9 @@ chsh -s $(which bash)
 ln -sf ~/src/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/src/dotfiles/zsh/.zshenv ~/.zshenv
 ```
+
+## Dependencies
+
+- starship
+- `bat`
+- `exa`

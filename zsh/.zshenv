@@ -15,3 +15,6 @@ export PATH="$PATH:/usr/local/go/bin"
 
 # Set Ionic Capacitor path for android-studio
 export CAPACITOR_ANDROID_STUDIO_PATH=/snap/bin/android-studio
+
+# Starship
+export STARSHIP_CONFIG="$HOME/src/dotfiles/zsh/starship.toml"
