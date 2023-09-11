@@ -1,0 +1,43 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "workbench.startupEditor": "newUntitledFile",
+    "gitlens.keymap": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "workbench.activityBar.visible": false,
+    "window.menuBarVisibility": "toggle",
+    "extensions.ignoreRecommendations": true,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "svelte.enable-ts-plugin": true,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.inlayHints.enabled": "off",
+    "[javascript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": false,
+        "markdown": false
+    },
+    "breadcrumbs.enabled": false,
+    "excalidraw.theme": "auto",
+    "editor.fontFamily": "'DejaVuSansM Nerd Font Mono', 'monospace', monospace",
+    "window.zoomLevel": 1
+}

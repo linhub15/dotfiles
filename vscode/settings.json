@@ -1,7 +1,26 @@
 {
+    "telemetry.telemetryLevel": "off",
     "editor.fontFamily": "'DejaVuSansM Nerd Font Mono', 'monospace', monospace",
+    "editor.inlayHints.enabled": "off",
+    "editor.inlineSuggest.enabled": true,
     "window.commandCenter": false,
     "workbench.startupEditor": "none",
     "workbench.layoutControl.enabled": false,
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "window.zoomLevel": 1
 }
