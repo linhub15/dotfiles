@@ -10,7 +10,6 @@ fi
 
 # Add Deno to Path
 export PATH="$HOME/.deno/bin:$PATH"
-export DENO_AUTH_TOKENS=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@raw.githubusercontent.com
 
 # Add GoLang to Path
 export PATH="$PATH:/usr/local/go/bin"
