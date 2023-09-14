@@ -1,11 +1,15 @@
-# Add Deno to Path
+# Add Deno 
 export PATH="$HOME/.deno/bin:$PATH"
 
-# Add GoLang to Path
-export PATH="$PATH:/usr/local/go/bin"
+# Add GoLang
+export PATH="/usr/local/go/bin:$PATH:"
 
 # Starship
 export STARSHIP_CONFIG="$HOME/src/dotfiles/zsh/starship.toml"
 
 # Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
+
+# Fast Node Manager
+export PATH="$HOME/.local/share/fnm:$PATH"
+

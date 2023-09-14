@@ -16,6 +16,8 @@ setopt autocd
 # source "$HOME/src/dotfiles/zsh/themes/my.zsh-theme" # my custom basic prompt
 eval "$(starship init zsh)" # starship prompt https://starship.rs
 
-# fnm
-export PATH="/home/linhub/.local/share/fnm:$PATH"
-eval "`fnm env`"
+# Fast Node Manager 
+if [[ $+commands[fnm] == 1 ]]; then
+  eval "`fnm env`"
+  alias nvm="fnm"
+fi
