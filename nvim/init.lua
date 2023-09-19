@@ -32,7 +32,16 @@ local plugins = {
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
   }
-}
+},
+	{
+		'neovim/nvim-lspconfig',
+		dependencies = {
+			{ 'williamboman/mason.nvim', config = true },
+			'williamboman/mason-lspconfig.nvim',
+			{ 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
+			'folke/neodev.nvim',
+		}
+	}
 }
 local opts = {}
 require("lazy").setup(plugins, opts)
