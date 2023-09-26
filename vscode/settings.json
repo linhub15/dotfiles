@@ -25,6 +25,6 @@
     "[javascriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
-    "window.zoomLevel": 1,
-    "window.menuBarVisibility": "hidden"
+    "window.menuBarVisibility": "hidden",
+    "window.zoomLevel": 1
 }
