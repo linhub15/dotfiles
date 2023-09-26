@@ -19,6 +19,9 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
 	'nvim-treesitter/nvim-treesitter',
+	'nvim-tree/nvim-tree.lua',
+	'nvim-tree/nvim-web-devicons',
+	'sindrets/diffview.nvim',
 	{
 		'nvim-telescope/telescope.nvim',
 		dependencies = { 'nvim-lua/plenary.nvim' }
@@ -60,15 +63,12 @@ local plugins = {
 			'rafamadriz/friendly-snippets',
 		},
 	},
-	'sindrets/diffview.nvim',
 	{
 		'folke/tokyonight.nvim',
 		lazy = false,
 		priority = 1000,
 		opts = {},
 	},
-	'nvim-tree/nvim-tree.lua',
-	'nvim-tree/nvim-web-devicons'
 }
 local opts = {}
 
@@ -183,3 +183,8 @@ mason_lspconfig.setup_handlers {
 		}
 	end
 }
+
+-- Git Diff configuration
+local diffview = require 'diffview'
+vim.keymap.set('n', '<leader>go', diffview.open, { desc = "[g]it diff [o]pen" })
+vim.keymap.set('n', '<leader>gc', diffview.close, { desc = "[g]it diff [c]lose" })
