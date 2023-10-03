@@ -21,3 +21,8 @@ if [[ $+commands[fnm] == 1 ]]; then
   eval "`fnm env`"
   alias nvm="fnm"
 fi
+
+# Keybindings
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
+bindkey "^H" backward-kill-word
