@@ -7,15 +7,14 @@ Preferred font is DejaVuSansM
 mklink /d "%HOME%\AppData\Local\nvim" "%HOME%\src\dotfiles\nvim"
 ```
 
-## Linux symlink to file directory
+## Linux & OSX symlink to file directory
 ```bat
 ln -s ~/src/dotfiles/nvim ~/.config/nvim
 ```
 
+## Functions
+- `:Format`
+- `:terminal`
+
 ## todo
-- formatter (md, sh, yaml, toml, html)
-- git integration
-- find a color theme 
-- deno integration
-- node integration
-- filetree (neotree)
+- add whichkey prefix descriptions and more configurations
