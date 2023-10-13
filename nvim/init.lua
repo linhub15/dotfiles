@@ -221,9 +221,20 @@ mason_lspconfig.setup_handlers {
 }
 
 -- Git Diff configuration
+local last_tabpage = vim.api.nvim_get_current_tabpage()
+function DiffviewToggle()
+  local lib = require'diffview.lib'
+  local view = lib.get_current_view()
+  if view then
+    -- Current tabpage is a Diffview; close it
+    vim.cmd(":DiffviewClose")
+  else
+    -- No open Diffview exists: open a new one
+    vim.cmd(":DiffviewOpen")
+  end
+end
 local diffview = require 'diffview'
-vim.keymap.set('n', '<leader>go', diffview.open, { desc = "[g]it diff [o]pen" })
-vim.keymap.set('n', '<leader>gc', diffview.close, { desc = "[g]it diff [c]lose" })
+vim.keymap.set('n', '<C-G>', DiffviewToggle, { desc = "toggle [g]it diff" })
 
 -- Enter neovim will set cwd
 vim.api.nvim_create_autocmd("VimEnter", {
