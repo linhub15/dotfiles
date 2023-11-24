@@ -169,6 +169,7 @@ local lspconfig_on_attach = function(_, bufnr)
 	vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
 		vim.lsp.buf.format()
 	end, { desc = 'Format current buffer with LSP' })
+	nmap('<C-I>', ':Format <CR>', 'Format document')
 end
 
 -- Enable the following language servers
@@ -223,16 +224,17 @@ mason_lspconfig.setup_handlers {
 -- Git Diff configuration
 local last_tabpage = vim.api.nvim_get_current_tabpage()
 function DiffviewToggle()
-  local lib = require'diffview.lib'
-  local view = lib.get_current_view()
-  if view then
-    -- Current tabpage is a Diffview; close it
-    vim.cmd(":DiffviewClose")
-  else
-    -- No open Diffview exists: open a new one
-    vim.cmd(":DiffviewOpen")
-  end
+	local lib = require 'diffview.lib'
+	local view = lib.get_current_view()
+	if view then
+		-- Current tabpage is a Diffview; close it
+		vim.cmd(":DiffviewClose")
+	else
+		-- No open Diffview exists: open a new one
+		vim.cmd(":DiffviewOpen")
+	end
 end
+
 local diffview = require 'diffview'
 vim.keymap.set('n', '<C-G>', DiffviewToggle, { desc = "toggle [g]it diff" })
 
@@ -244,11 +246,11 @@ vim.api.nvim_create_autocmd("VimEnter", {
 
 		-- buffer is a [No Name]
 		local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
-	  
+
 		if not real_file and not no_name then
-		  return
+			return
 		end
-	  
+
 		-- open the tree, find the file but don't focus it
 		require("nvim-tree.api").tree.toggle({ focus = true, find_file = true, })
 	end,
