@@ -69,6 +69,11 @@ local plugins = {
 		priority = 1000,
 		opts = {},
 	},
+	{
+		'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		opts = {} -- this is equalent to setup({}) function
+	}
 }
 local opts = {}
 
