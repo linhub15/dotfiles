@@ -34,3 +34,8 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# bun completions
+if [[ $+commands[exa] == 1 ]]; then
+  [ -s "/home/linhub/.bun/_bun" ] && source "/home/linhub/.bun/_bun"
+fi

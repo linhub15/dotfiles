@@ -1,7 +1,7 @@
-# Add Deno 
+# Deno 
 export PATH="$HOME/.deno/bin:$PATH"
 
-# Add GoLang
+# GoLang
 export PATH="/usr/local/go/bin:$PATH:"
 
 # Starship
@@ -13,3 +13,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 # Fast Node Manager
 export PATH="$HOME/.local/share/fnm:$PATH"
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

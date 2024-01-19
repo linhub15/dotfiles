@@ -11,11 +11,12 @@
         "editor.defaultFormatter": "vscode.html-language-features"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.tabSize": 2
     },
     "[typescriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno",
-	"editor.tabSize": 2
+        "editor.tabSize": 2
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
