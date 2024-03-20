@@ -21,4 +21,4 @@ ln -sf ~/src/dotfiles/zsh/.zshenv ~/.zshenv
 
 - starship
 - `bat`
-- `exa`
+- `eza`

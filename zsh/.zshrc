@@ -5,9 +5,9 @@ elif [[ $+commands[bat] == 1 ]]; then
   alias cat="bat"
 fi
 
-if [[ $+commands[exa] == 1 ]]; then
-  alias ls="exa --group-directories-first"
-  alias l="exa -lah --group-directories-first"
+if [[ $+commands[eza] == 1 ]]; then
+  alias ls="eza --group-directories-first"
+  alias l="eza -lah --group-directories-first"
 fi
 
 # Options
@@ -36,6 +36,6 @@ esac
 # pnpm end
 
 # bun completions
-if [[ $+commands[exa] == 1 ]]; then
+if [[ $+commands[bun] == 1 ]]; then
   [ -s "/home/linhub/.bun/_bun" ] && source "/home/linhub/.bun/_bun"
 fi
