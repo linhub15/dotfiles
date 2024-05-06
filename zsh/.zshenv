@@ -2,7 +2,7 @@
 export PATH="$HOME/.deno/bin:$PATH"
 
 # GoLang
-export PATH="/usr/local/go/bin:$PATH:"
+export PATH="/usr/local/go/bin:$PATH"
 
 # Starship
 export STARSHIP_CONFIG="$HOME/src/dotfiles/zsh/starship.toml"

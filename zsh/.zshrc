@@ -28,7 +28,7 @@ bindkey "^[[1;5D" backward-word
 bindkey "^H" backward-kill-word
 
 # pnpm
-export PNPM_HOME="/home/linhub/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -37,5 +37,9 @@ esac
 
 # bun completions
 if [[ $+commands[bun] == 1 ]]; then
-  [ -s "/home/linhub/.bun/_bun" ] && source "/home/linhub/.bun/_bun"
+  [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+fi
+
+if [[ $(uname -s) == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 fi
