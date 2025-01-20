@@ -14,7 +14,9 @@ fi
 setopt autocd
 
 # source "$HOME/src/dotfiles/zsh/themes/my.zsh-theme" # my custom basic prompt
-eval "$(starship init zsh)" # starship prompt https://starship.rs
+if [[ $+commands[starship] == 1 ]]; then
+  eval "$(starship init zsh)" # starship prompt https://starship.rs
+fi
 
 # Fast Node Manager 
 if [[ $+commands[fnm] == 1 ]]; then
@@ -34,11 +36,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
-
-# bun completions
-if [[ $+commands[bun] == 1 ]]; then
-  [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-fi
 
 if [[ $(uname -s) == "Linux" ]]; then
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
