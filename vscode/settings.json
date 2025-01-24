@@ -28,7 +28,5 @@
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
-    },
-    "gitblame.inlineMessageEnabled": true,
-    "gitblame.inlineMessageFormat": "${author.name} (${time.ago})"
+    }
 }

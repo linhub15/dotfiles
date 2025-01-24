@@ -1,3 +1,8 @@
+# Linuxbrew
+if [[ $(uname -s) == "Linux" ]]; then
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+
 # Aliases
 if [[ $+commands[batcat] == 1 ]]; then
   alias cat="batcat"
@@ -18,12 +23,6 @@ if [[ $+commands[starship] == 1 ]]; then
   eval "$(starship init zsh)" # starship prompt https://starship.rs
 fi
 
-# Fast Node Manager 
-if [[ $+commands[fnm] == 1 ]]; then
-  eval "`fnm env`"
-  alias nvm="fnm"
-fi
-
 # Keybindings
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
@@ -37,8 +36,9 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-if [[ $(uname -s) == "Linux" ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# Fast Node Manager 
+if [[ $+commands[fnm] == 1 ]]; then
+  eval "`fnm env`"
 fi
 
 # Turso
