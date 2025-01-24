@@ -1,0 +1,106 @@
+{
+	"name": "Vimium C",
+	"@time": "2025-01-23, 8:46:27 p.m.",
+	"time": 1737690387680,
+	"environment": {
+		"extension": "1.99.997",
+		"platform": "linux",
+		"firefox": 134
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://excalidraw.com/"
+		},
+		{
+			"passKeys": "< > m ",
+			"pattern": ":https://www.youtube.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://www.indiehackers.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://cosmos.azure.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://v6p9d9t4.ssl.hwcdn.net/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://app.sketchup.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://www.keybr.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://progressio.ent.cgi.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://www.tldraw.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://play.typeracer.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://supabase.com/dashboard/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://app.eraser.io/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://docs.google.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://keyboard.dmitrijs.lv/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://help.bill.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://docs.stripe.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"unmap r",
+		"unmap R",
+		"unmap / # use browser find",
+		"",
+		"# vertical tabs",
+		"map J nextTab",
+		"map K previousTab",
+		"",
+		"# omnibar",
+		"unmap t",
+		"unmap T",
+		"unmap o",
+		"unmap b",
+		"unmap B",
+		"unmap ge",
+		"unmap gE",
+		"unmap gn",
+		""
+	],
+	"vimSync": true,
+	"vomnibarOptions": {
+		"actions": "",
+		"maxMatches": 8,
+		"queryInterval": 333,
+		"sizes": "77,3,44,0.8",
+		"styles": "mono-url"
+	}
+}
