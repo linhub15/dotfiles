@@ -4,9 +4,11 @@
     "editor.inlayHints.enabled": "off",
     "editor.inlineSuggest.enabled": true,
     "window.commandCenter": false,
+    "window.menuBarVisibility": "hidden",
+    "window.zoomLevel": 1,
+    "workbench.activityBar.location": "hidden",
     "workbench.startupEditor": "none",
     "workbench.layoutControl.enabled": false,
-    "workbench.activityBar.visible": false,
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -27,6 +29,6 @@
     "[javascriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
-    "window.menuBarVisibility": "hidden",
-    "window.zoomLevel": 1
+    "gitblame.inlineMessageEnabled": true,
+    "gitblame.inlineMessageFormat": "${author.name} (${time.ago})"
 }
