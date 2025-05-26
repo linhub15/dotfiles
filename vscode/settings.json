@@ -1,14 +1,19 @@
 {
     "telemetry.telemetryLevel": "off",
+    "editor.defaultFormatter": "denoland.vscode-deno",
     "editor.fontFamily": "'DejaVuSansM Nerd Font Mono', 'monospace', monospace",
+    "editor.tabSize": 2,
     "editor.inlayHints.enabled": "off",
     "editor.inlineSuggest.enabled": true,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.stickyScroll.enabled": false,
     "window.commandCenter": false,
     "window.menuBarVisibility": "hidden",
     "window.zoomLevel": 1,
     "workbench.activityBar.location": "hidden",
     "workbench.startupEditor": "none",
     "workbench.layoutControl.enabled": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -30,5 +35,10 @@
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
     "workbench.editor.empty.hint": "hidden",
+	"workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+		"*.svg": "default"
+	},
+    "github.copilot.nextEditSuggestions.enabled": true,
     "update.showReleaseNotes": false
 }

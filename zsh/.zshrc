@@ -4,6 +4,8 @@ if [[ $(uname -s) == "Linux" ]]; then
 fi
 
 # Aliases
+alias c="code"
+
 if [[ $+commands[batcat] == 1 ]]; then
   alias cat="batcat"
 elif [[ $+commands[bat] == 1 ]]; then
@@ -35,3 +37,10 @@ fi
 
 # Turso
 export PATH="$PATH:$HOME/.turso"
+
+# asdf - runtime manager
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+## asdf - append completions to fpath
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions $fpath)
+## asdf - initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
