@@ -1,4 +1,4 @@
-# Deno 
+# Deno
 export PATH="$HOME/.deno/bin:$PATH"
 
 # GoLang

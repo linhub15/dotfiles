@@ -28,5 +28,7 @@
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
-    }
+    },
+    "workbench.editor.empty.hint": "hidden",
+    "update.showReleaseNotes": false
 }
