@@ -7,17 +7,24 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "edit_predictions": {
+    "disabled_globs": [],
+    "provider": "copilot",
+  },
+  "debugger": {
+    "dock": "left",
+  },
   "agent": {
     "dock": "left",
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-opus-4.6"
+      "model": "claude-opus-4.6",
     },
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
   "vim_mode": false,
   "ui_font_size": 16,
-  "buffer_font_size": 16
+  "buffer_font_size": 16,
 }
