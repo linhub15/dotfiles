@@ -39,3 +39,15 @@ the scaling command can also rewrite the generic default scale.
 hl.unbind("SUPER + SLASH")
 hl.unbind("SUPER + ALT + SLASH")
 ```
+
+## Default agent shortcut
+
+Use **Super+Shift+A** (Omarchy's former ChatGPT web app shortcut) to launch the
+default agent. Remove the original **Super+Ctrl+Shift+A** agent shortcut.
+Add these overrides to `~/.config/hypr/bindings.lua`:
+
+```lua
+hl.unbind("SUPER + SHIFT + A")
+hl.unbind("SUPER + SHIFT + CTRL + A")
+o.bind("SUPER + SHIFT + A", "Agent", "omarchy-agent --pick")
+```
