@@ -51,3 +51,28 @@ hl.unbind("SUPER + SHIFT + A")
 hl.unbind("SUPER + SHIFT + CTRL + A")
 o.bind("SUPER + SHIFT + A", "Agent", "omarchy-agent --pick")
 ```
+
+## MEGA integration for Strata
+
+The custom MEGAcmd provider source, icons, installer and tests live in
+[`strata/providers/mega`](strata/providers/mega/README.md). It displays sync status
+on configured sync-root folders, including `~/notes` synced with MEGA `/notes`,
+and indexed cloud-metadata comparison badges on their files and subfolders.
+Linux filesystem watches mark changed paths and ancestor folders dirty. Metadata
+is cached for 24 hours, with targeted refreshes and a six-hour audit. The first
+startup indexes the notes tree; normal browsing reuses saved statuses.
+The private SQLite cache is `~/.cache/strata-mega/metadata.sqlite3` and stays
+outside this repository.
+
+Install or update the provider from this checkout:
+
+```sh
+python3 ~/github/dotfiles/omarchy/strata/providers/mega/install.py
+```
+
+Then fully quit and reopen Strata. Newer builds also provide
+**Settings → Integrations → Refresh**; the October 13 Omarchy build has no such
+settings page but does load providers at startup. The installer
+generates `provider.json` with this machine's paths and copies runtime files into
+`~/.config/strata/providers/mega/`. Credentials and MEGAcmd session data are not
+part of this repository. MEGAcmd must be installed and running separately.
